@@ -1,0 +1,54 @@
+# com.apple.finder
+com.apple.finder ShowPathbar TRUE
+com.apple.finder ShowExternalHardDrivesOnDesktop TRUE
+com.apple.finder ShowHardDrivesOnDesktop FALSE
+com.apple.finder ShowPreviewPane FALSE
+com.apple.finder ShowRemovableMediaOnDesktop TRUE
+com.apple.finder ShowSidebar TRUE
+com.apple.finder ShowStatusBar TRUE
+com.apple.finder AppleShowAllFiles TRUE
+
+# com.apple.Safari
+com.apple.Safari AutoFillPasswords FALSE
+com.apple.Safari AutoOpenSafeDownloads FALSE
+com.apple.Safari ShowFullURLInSmartSearchField TRUE
+com.apple.Safari ShowOverlayStatusBar TRUE
+com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey TRUE
+com.apple.Safari AlwaysRestoreSessionAtLaunch TRUE
+com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool YES
+
+# disable monit: aplication downloaded from internet
+com.apple.LaunchServices LSQuarantine -bool NO
+
+# mouse
+com.apple.AppleMultitouchMouse MouseButtonMode TwoButton
+com.apple.AppleMultitouchMouse MouseHorizontalScroll TRUE
+com.apple.AppleMultitouchMouse MouseMomentumScroll TRUE
+com.apple.AppleMultitouchMouse MouseOneFingerDoubleTapGesture 0
+com.apple.AppleMultitouchMouse MouseTwoFingerDoubleTapGesture 3
+com.apple.AppleMultitouchMouse MouseTwoFingerHorizSwipeGesture 2
+com.apple.AppleMultitouchMouse MouseVerticalScroll TRUE
+com.apple.AppleMultitouchMouse UserPreferences TRUE
+
+# touchpad
+com.apple.AppleMultitouchTrackpad Clicking TRUE
+com.apple.AppleMultitouchTrackpad Dragging TRUE
+com.apple.AppleMultitouchTrackpad TrackpadCornerSecondaryClick 0
+com.apple.AppleMultitouchTrackpad TrackpadFiveFingerPinchGesture 2
+com.apple.AppleMultitouchTrackpad TrackpadFourFingerHorizSwipeGesture 2
+com.apple.AppleMultitouchTrackpad TrackpadFourFingerPinchGesture 2
+com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture 2
+com.apple.AppleMultitouchTrackpad TrackpadHandResting TRUE
+com.apple.AppleMultitouchTrackpad TrackpadHorizScroll TRUE
+com.apple.AppleMultitouchTrackpad TrackpadMomentumScroll TRUE
+com.apple.AppleMultitouchTrackpad TrackpadPinch TRUE
+com.apple.AppleMultitouchTrackpad TrackpadRightClick TRUE
+com.apple.AppleMultitouchTrackpad TrackpadRotate TRUE
+com.apple.AppleMultitouchTrackpad TrackpadScroll TRUE
+com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag 0
+com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture 2
+com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture 2
+com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture 2
+com.apple.AppleMultitouchTrackpad TrackpadTwoFingerDoubleTapGesture 1
+com.apple.AppleMultitouchTrackpad TrackpadTwoFingerFromRightEdgeSwipeGesture 3
+

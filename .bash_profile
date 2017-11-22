@@ -26,3 +26,5 @@ if uname | grep CYGWIN > /dev/null; then
   }
 fi
 
+alias ydl='youtube-dl --add-metadata -x --audio-format mp3'
+

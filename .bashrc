@@ -3,10 +3,6 @@ if [ -d "${HOME}/bin" ] ; then
   PATH="${HOME}/bin:${PATH}"
 fi
 
-if [ -d "${HOME}/nbin" ] ; then
-  PATH="${HOME}/nbin:${PATH}"
-fi
-
 if uname | grep CYGWIN > /dev/null; then
   function killall  {
     if [ $# -ne 1 ]; then

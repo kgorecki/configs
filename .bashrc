@@ -3,6 +3,15 @@ if [ -d "${HOME}/bin" ] ; then
   PATH="${HOME}/bin:${PATH}"
 fi
 
+# ignore duplicate lines
+HISTCONTROL=ignoreboth
+
+# append to the history file
+shopt -s histappend
+
+HISTSIZE=1000
+HISTFILESIZE=2000
+
 if uname | grep CYGWIN > /dev/null; then
   function killall  {
     if [ $# -ne 1 ]; then

@@ -12,6 +12,8 @@ shopt -s histappend
 HISTSIZE=1000
 HISTFILESIZE=2000
 
+stty -ixon
+
 if uname | grep CYGWIN > /dev/null; then
   function killall  {
     if [ $# -ne 1 ]; then

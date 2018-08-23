@@ -189,16 +189,16 @@
   <keybind key="C-A-Down">
     <action name="DesktopDown"><dialog>no</dialog><wrap>no</wrap></action>
   </keybind>
-  <keybind key="S-A-Left">
+  <keybind key="S-A-C-Left">
     <action name="SendToDesktopLeft"><dialog>no</dialog><wrap>no</wrap></action>
   </keybind>
-  <keybind key="S-A-Right">
+  <keybind key="S-A-C-Right">
     <action name="SendToDesktopRight"><dialog>no</dialog><wrap>no</wrap></action>
   </keybind>
-  <keybind key="S-A-Up">
+  <keybind key="S-A-C-Up">
     <action name="SendToDesktopUp"><dialog>no</dialog><wrap>no</wrap></action>
   </keybind>
-  <keybind key="S-A-Down">
+  <keybind key="S-A-C-Down">
     <action name="SendToDesktopDown"><dialog>no</dialog><wrap>no</wrap></action>
   </keybind>
   <keybind key="W-F1">

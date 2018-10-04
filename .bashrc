@@ -48,3 +48,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
+. git-completion.bash
+

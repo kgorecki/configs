@@ -3,6 +3,8 @@ if [ -d "${HOME}/bin" ] ; then
   PATH="${HOME}/bin:${PATH}"
 fi
 
+KONEHOSTNAME="desktop"
+
 # ignore duplicate lines
 HISTCONTROL=ignoreboth
 
@@ -28,7 +30,12 @@ if uname | grep CYGWIN > /dev/null; then
   }
 fi
 
-alias ydl='youtube-dl --add-metadata -x --audio-format mp3'
+DESKTOP=''
+if [ `hostname` = ${KONEHOSTNAME} ]; then
+  DESKTOP='./'
+fi
+alias ydl="${DESKTOP}youtube-dl --add-metadata -x --audio-format mp3"
+alias grep='grep -snI'
 
 # enable colors
 if [ -x /usr/bin/dircolors ]; then
@@ -48,5 +55,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
-. git-completion.bash
+. ~/git-completion.bash
 

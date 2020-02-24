@@ -12,4 +12,5 @@ alias ls='ls -G'
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd" # ls colors like in Linux
 fpath=(~/.zsh $fpath)
 autoload -Uz compinit && compinit
+zstyle ":completion:*:commands" rehash 1 # refresh apps in PATH
 

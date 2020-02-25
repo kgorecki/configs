@@ -34,3 +34,7 @@ fi
 PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%1~%f%b %# '
 zstyle ':vcs_info:git:*' formats '%{%F{yellow}%}%r%{%f%}: %{%F{green}%}%b%{%f%}'
 
+if which thefuck >> /dev/null; then
+  eval $(thefuck --alias)
+fi
+

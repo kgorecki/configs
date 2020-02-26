@@ -30,7 +30,7 @@ function battery
   if [[ `uname` == "Darwin" ]]; then
     pmset -g batt | grep -Eo "\d+%" | cut -d% -f1
   else
-    acpi | grep -o "[0-9]*%"
+    acpi -b | grep -P -o '[0-9]+(?=%)'
   fi
 }
 RPROMPT="\$vcs_info_msg_0_ | "'$(battery)'"%%"

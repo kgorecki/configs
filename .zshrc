@@ -25,11 +25,15 @@ autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git
 precmd() { vcs_info }
 setopt prompt_subst
-if [[ `uname` == "Darwin" ]]; then
-  RPROMPT="\$vcs_info_msg_0_ | "`pmset -g batt | grep -Eo "\d+%" | cut -d% -f1`"%%"
-else
-  RPROMPT="\$vcs_info_msg_0_ " '$(acpi | grep -o "[0-9]*%)%'
-fi
+function battery
+{
+  if [[ `uname` == "Darwin" ]]; then
+    pmset -g batt | grep -Eo "\d+%" | cut -d% -f1
+  else
+    acpi | grep -o "[0-9]*%"
+  fi
+}
+RPROMPT="\$vcs_info_msg_0_ | "'$(battery)'"%%"
 # takan from here: https://scriptingosx.com/2019/07/moving-to-zsh-06-customizing-the-zsh-prompt/
 PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%1~%f%b %# '
 zstyle ':vcs_info:git:*' formats '%{%F{yellow}%}%r%{%f%}: %{%F{green}%}%b%{%f%}'

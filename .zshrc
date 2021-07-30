@@ -9,6 +9,10 @@ function add_directory_to_path()
 add_directory_to_path ${HOME}/bin
 add_directory_to_path ${HOME}/prog
 
+if [[ "$OSTYPE" == "darwin"* && -d "/opt/homebrew/bin" ]]; then
+  add_directory_to_path /opt/homebrew/bin
+fi
+
 # aliases:
 alias ls='ls -G'
 alias grep='grep -n'

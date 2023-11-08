@@ -16,6 +16,7 @@ fi
 # aliases:
 alias ls='ls -G'
 alias grep='grep -n'
+alias nvmsource='source $(brew --prefix nvm)/nvm.sh'
 
 # colours:
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd" # ls colors like in Linux

@@ -36,7 +36,7 @@ function battery
   if [[ `uname` == "Darwin" ]]; then
     pmset -g batt | command grep -Eo "\d+%" | cut -d% -f1
   else
-    acpi -b | grep -P -o '[0-9]+(?=%)'
+    acpi -b | grep -P -o '[0-9]+(?=%)' | awk -F":" {'print $2'}
   fi
 }
 function getConfirmed
